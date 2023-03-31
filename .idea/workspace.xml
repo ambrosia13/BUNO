@@ -4,42 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf5d56ea-4bc4-40d7-8ad0-341177bd8dd9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Buno_main_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/api/ActionCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/api/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/api/Cards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/api/ColoredCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/game/CardDeck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/game/CardPile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/game/CardRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/impl/card/RegularCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/impl/card/action/ColoredActionCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/impl/card/action/DrawTwoCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/impl/card/action/ReverseCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/impl/card/action/SkipCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/impl/card/wild/WildCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/card/impl/card/wild/WildDrawFourCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/player/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/player/Players.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/util/ColorUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ambrosia/buno/util/OptionMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="cf5d56ea-4bc4-40d7-8ad0-341177bd8dd9" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,6 +214,14 @@
       <option name="presentableId" value="Default" />
       <updated>1680024456474</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1680296039806</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680296039806</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,6 +237,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
