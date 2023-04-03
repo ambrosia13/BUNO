@@ -14,3 +14,7 @@ This is just a simple, just-for-fun game. In reality, players would play on diff
 
 1. Open the project in a sufficient IDE, such as IntelliJ IDEA
 2. In the command line, type `./gradlew fatJar` or `./gradlew jar`
+
+# But wait! Singletons are bad design practice!
+
+Yes. I used them anyway.
