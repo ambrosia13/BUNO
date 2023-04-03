@@ -11,6 +11,11 @@ public final class ColorUtils {
 	public static final String DISPLAY_GREEN = "\033[0;32m";
 	public static final String DISPLAY_BLUE = "\033[0;34m";
 	public static final String DISPLAY_RED = "\033[0;31m";
+	
+	public static final String DISPLAY_YELLOW_BOLD = "\033[1;33m";
+	public static final String DISPLAY_GREEN_BOLD = "\033[1;32m";
+	public static final String DISPLAY_BLUE_BOLD = "\033[1;34m";
+	public static final String DISPLAY_RED_BOLD = "\033[1;31m";
 
 	public static final String DISPLAY_PURPLE = "\033[0;35m";
 	public static final String DISPLAY_CYAN = "\033[0;36m";

@@ -17,7 +17,17 @@ public class Cards {
 			case COLOR_GREEN -> ColorUtils.DISPLAY_GREEN;
 			case COLOR_BLUE -> ColorUtils.DISPLAY_BLUE;
 			case COLOR_RED -> ColorUtils.DISPLAY_RED;
-			default -> null;
+			default -> "";
+		};
+	}
+	
+	public static String getBoldColorDisplay(int color) {
+		return switch(color) {
+			case COLOR_YELLOW -> ColorUtils.DISPLAY_YELLOW_BOLD;
+			case COLOR_GREEN -> ColorUtils.DISPLAY_GREEN_BOLD;
+			case COLOR_BLUE -> ColorUtils.DISPLAY_BLUE_BOLD;
+			case COLOR_RED -> ColorUtils.DISPLAY_RED_BOLD;
+			default -> "";
 		};
 	}
 }

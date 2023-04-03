@@ -27,6 +27,6 @@ public class SkipCard extends ColoredActionCard {
 	
 	@Override
 	public String toString() {
-		return ColorUtils.colorize("Skip", Cards.getColorDisplay(this.color));
+		return ColorUtils.colorize("Skip", Cards.getBoldColorDisplay(this.color));
 	}
 }

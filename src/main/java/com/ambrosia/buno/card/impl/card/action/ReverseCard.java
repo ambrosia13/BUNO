@@ -23,6 +23,6 @@ public class ReverseCard extends ColoredActionCard {
 
 	@Override
 	public String toString() {
-		return ColorUtils.colorize("Reverse", Cards.getColorDisplay(this.color));
+		return ColorUtils.colorize("Reverse", Cards.getBoldColorDisplay(this.color));
 	}
 }

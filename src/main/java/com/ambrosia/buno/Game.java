@@ -54,6 +54,9 @@ public class Game {
 	
 	// Called at the end of each round
 	public void incrementRound() {
+		// clear console
+		clearConsole();
+		
 		if(moveForward) currentRound++;
 		else currentRound--;
 		
@@ -97,9 +100,10 @@ public class Game {
 		
 		sleep(4000);
 		
+		System.out.println("Please enter the name of the next player you want to add, or 'done' to finish.");
+		System.out.println("You can enter multiple names at once by separating them with spaces.");
+		
 		initPlayers: while(true) {
-			System.out.println("Please enter the name of the next player you want to add, or 'done' to finish.");
-			System.out.println("You can enter multiple names at once by separating them with spaces.");
 			String input = game.in.next();
 			
 			if(input.equalsIgnoreCase("done")) {
@@ -155,10 +159,9 @@ public class Game {
 			.display().evaluate();
 		
 		System.out.println("Starting!");
+		sleep(4000);
 		
 		gameLoop: while(true) {
-			sleep(4000);
-			
 			Player currentPlayer = players.getCurrentPlayer(), 
 			       previousPlayer = players.getPreviousPlayer();
 			
@@ -184,11 +187,9 @@ public class Game {
 			
 			System.out.println();
 			System.out.println("When you are alone and no one can see your screen, please type anything in.");
-			System.out.println();
-			
 			game.in.next();
 			
-			sleep(500);
+			System.out.println();
 			
 			playCard: while(true) {
 				System.out.println("Which card do you want to play?");
@@ -258,8 +259,9 @@ public class Game {
 					continue playCard;
 				}
 				
-				System.out.printf("Adding %s to pile!", toPlay.toString());
+				System.out.printf("Adding %s to pile!", toPlay);
 				System.out.println();
+				
 				currentPlayer.addCardToPile(answer);
 				
 				if(toPlay instanceof ActionCard actionCard) {
@@ -291,7 +293,11 @@ public class Game {
 					player.name,
 					game.totalRounds, game.numWildCards, game.numCardsDrawnFromActionCards
 				);
+				
+				System.exit(0);
 			}
+			
+			sleep(4000);
 			
 			game.incrementRound();
 		}
@@ -303,5 +309,9 @@ public class Game {
 		} catch(InterruptedException ignored) {
 			
 		}
+	}
+	
+	private static void clearConsole() {
+		System.out.println(System.lineSeparator().repeat(150));
 	}
 }

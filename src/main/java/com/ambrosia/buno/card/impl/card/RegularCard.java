@@ -6,6 +6,8 @@ import com.ambrosia.buno.card.api.Cards;
 import com.ambrosia.buno.card.api.ColoredCard;
 import com.ambrosia.buno.util.ColorUtils;
 
+import java.text.AttributedString;
+
 public class RegularCard implements ColoredCard {
 	private final int color;
 	private final int number;
@@ -19,6 +21,22 @@ public class RegularCard implements ColoredCard {
 		return this.number;
 	}
 
+	public String getNumberAsString() {
+		return switch(this.number) {
+			case 0 -> "Zero";
+			case 1 -> "One";
+			case 2 -> "Two";
+			case 3 -> "Three";
+			case 4 -> "Four";
+			case 5 -> "Five";
+			case 6 -> "Six";
+			case 7 -> "Seven";
+			case 8 -> "Eight";
+			case 9 -> "Nine";
+			default -> throw new IllegalStateException("Unexpected value: " + this.number);
+		};
+	}
+	
 	@Override
 	public int getColor() {
 		return this.color;
@@ -37,6 +55,6 @@ public class RegularCard implements ColoredCard {
 
 	@Override
 	public String toString() {
-		return ColorUtils.colorize(String.valueOf(this.number), Cards.getColorDisplay(this.color));
+		return ColorUtils.colorize(getNumberAsString(), Cards.getColorDisplay(this.color));
 	}
 }

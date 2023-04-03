@@ -30,6 +30,6 @@ public class DrawTwoCard extends ColoredActionCard {
 
 	@Override
 	public String toString() {
-		return ColorUtils.colorize("Draw Two", Cards.getColorDisplay(this.color));
+		return ColorUtils.colorize("Draw Two", Cards.getBoldColorDisplay(this.color));
 	}
 }

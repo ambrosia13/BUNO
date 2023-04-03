@@ -20,6 +20,11 @@ public class WildDrawFourCard extends WildCard {
 		System.out.println(nextPlayer.name + " has taken four random cards from the deck.");
 	}
 	
+	/**
+	 * According to the official Uno specification,
+	 * wild draw four cards can only be played if the
+	 * player can play no other cards.
+	 */
 	@Override
 	public boolean isValid(Card bottom) {
 		boolean isValid = true;
@@ -30,7 +35,7 @@ public class WildDrawFourCard extends WildCard {
 			}
 		}
 		
-		return isValid;
+		return !isValid;
 	}
 	
 	@Override
