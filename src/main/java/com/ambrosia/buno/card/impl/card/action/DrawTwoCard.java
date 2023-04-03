@@ -3,7 +3,6 @@ package com.ambrosia.buno.card.impl.card.action;
 import com.ambrosia.buno.Game;
 import com.ambrosia.buno.card.api.Card;
 import com.ambrosia.buno.card.api.Cards;
-import com.ambrosia.buno.card.api.ColoredCard;
 import com.ambrosia.buno.player.Player;
 import com.ambrosia.buno.player.Players;
 import com.ambrosia.buno.util.ColorUtils;

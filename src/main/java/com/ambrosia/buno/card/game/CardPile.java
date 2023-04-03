@@ -1,7 +1,6 @@
 package com.ambrosia.buno.card.game;
 
 import com.ambrosia.buno.Game;
-import com.ambrosia.buno.card.api.ActionCard;
 import com.ambrosia.buno.card.api.Card;
 import com.ambrosia.buno.card.api.ColoredCard;
 import com.ambrosia.buno.card.impl.card.RegularCard;

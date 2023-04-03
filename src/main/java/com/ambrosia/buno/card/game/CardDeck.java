@@ -3,7 +3,6 @@ package com.ambrosia.buno.card.game;
 import com.ambrosia.buno.Game;
 import com.ambrosia.buno.card.api.Card;
 import com.ambrosia.buno.card.api.Cards;
-import com.ambrosia.buno.card.api.ColoredCard;
 import com.ambrosia.buno.card.impl.card.RegularCard;
 import com.ambrosia.buno.card.impl.card.action.DrawTwoCard;
 import com.ambrosia.buno.card.impl.card.action.ReverseCard;

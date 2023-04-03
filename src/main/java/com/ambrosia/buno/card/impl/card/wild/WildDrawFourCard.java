@@ -1,7 +1,6 @@
 package com.ambrosia.buno.card.impl.card.wild;
 
 import com.ambrosia.buno.Game;
-import com.ambrosia.buno.card.api.ActionCard;
 import com.ambrosia.buno.card.api.Card;
 import com.ambrosia.buno.player.Player;
 import com.ambrosia.buno.player.Players;
