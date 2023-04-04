@@ -5,7 +5,7 @@ import com.ambrosia.buno.card.api.Card;
 import com.ambrosia.buno.card.api.Cards;
 import com.ambrosia.buno.util.ColorUtils;
 
-public class ReverseCard extends ColoredActionCard {
+public class ReverseCard extends AbstractColoredActionCard {
 	public ReverseCard(int color) {
 		super(color);
 	}

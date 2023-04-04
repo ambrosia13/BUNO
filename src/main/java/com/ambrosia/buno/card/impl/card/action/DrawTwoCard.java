@@ -7,7 +7,7 @@ import com.ambrosia.buno.player.Player;
 import com.ambrosia.buno.player.Players;
 import com.ambrosia.buno.util.ColorUtils;
 
-public class DrawTwoCard extends ColoredActionCard {
+public class DrawTwoCard extends AbstractColoredActionCard {
 	public DrawTwoCard(int color) {
 		super(color);
 	}

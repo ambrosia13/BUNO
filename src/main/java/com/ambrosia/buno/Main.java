@@ -6,7 +6,7 @@ public class Main {
 		// as a workaround.
 		try {
 			Game.run();
-		} catch(Exception e) {
+		} catch(Throwable e) {
 			e.printStackTrace();
 		}
 	}

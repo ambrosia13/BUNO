@@ -4,6 +4,10 @@ import com.ambrosia.buno.Game;
 
 import java.util.ArrayList;
 
+/**
+ * Singleton class that hold all the players. 
+ * god i hate singletons now
+ */
 public class Players {
 	private static Players instance;
 	
@@ -44,6 +48,9 @@ public class Players {
 		return players.get(mod(index, players.size()));
 	}
 	
+	/**
+	 * May not be completely accurate in some configurations
+	 */
 	public Player getPreviousPlayer() {
 		return getPlayer(Game.getInstance().getCurrentRound() + (Game.getInstance().moveForward ? -1 : 1));
 	}

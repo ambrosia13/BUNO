@@ -4,7 +4,9 @@ plugins {
 }
 
 group 'com.ambrosia'
-version '1.0-SNAPSHOT'
+
+archivesBaseName = 'BUNO'
+version ''
 
 repositories {
     mavenCentral()
@@ -31,17 +33,17 @@ jar {
     }
 }
 
-task fatJar(type: Jar) {
+tasks.register('deployJar', Jar) {
     manifest {
         attributes 'Main-Class': 'com.ambrosia.buno.Main'
     }
-    
+
     from {
-        configurations.compileClasspath.collect { 
+        configurations.compileClasspath.collect {
             it.isDirectory() ? it : zipTree(it)
         }
     }
-    
+
     with jar
 }
 

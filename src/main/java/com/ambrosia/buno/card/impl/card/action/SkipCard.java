@@ -7,7 +7,7 @@ import com.ambrosia.buno.player.Player;
 import com.ambrosia.buno.player.Players;
 import com.ambrosia.buno.util.ColorUtils;
 
-public class SkipCard extends ColoredActionCard {
+public class SkipCard extends AbstractColoredActionCard {
 	public SkipCard(int color) {
 		super(color);
 	}

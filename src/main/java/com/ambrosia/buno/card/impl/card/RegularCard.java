@@ -6,6 +6,9 @@ import com.ambrosia.buno.card.api.Cards;
 import com.ambrosia.buno.card.api.ColoredCard;
 import com.ambrosia.buno.util.ColorUtils;
 
+/**
+ * The regular card you see in uno.
+ */
 public class RegularCard implements ColoredCard {
 	private final int color;
 	private final int number;

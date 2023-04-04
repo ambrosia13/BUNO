@@ -19,13 +19,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
+	// singleton . bad 
 	private static Game instance;
 
 	// Game state variables
-	public final Scanner in;
+	private final Scanner in;
 	public final Random random;
-
-
 	private int currentRound;
 	public int currentColor;
 	public boolean moveForward;
@@ -70,6 +69,22 @@ public class Game {
 		// increment the total rounds no matter what
 		totalRounds++;
 	}
+	
+	/**
+	 * Returns the user input, but exits the program if the user entered in
+	 * "--quit".
+	 */
+	public String input() {
+		String r = in.next();
+		
+		if(r.equals("--quit")) {
+			System.exit(0);
+		}
+		
+		return r;
+	}
+	
+	// returns 1 if moving forward, -1 if moving backwards (reversed)
 	public int getDirection() {
 		if(moveForward) return 1;
 		else return -1;
@@ -83,6 +98,7 @@ public class Game {
 		return instance;
 	}
 
+	// runs the game
 	public static void run() {
 		// Singleton hell
 		final Game game = Game.getInstance();
@@ -103,8 +119,9 @@ public class Game {
 		System.out.println("Please enter the name of the next player you want to add, or 'done' to finish.");
 		System.out.println("You can enter multiple names at once by separating them with spaces.");
 		
+		// adds players
 		initPlayers: while(true) {
-			String input = game.in.next();
+			String input = game.input();
 			
 			if(input.equalsIgnoreCase("done")) {
 				if(players.getPlayerCount() < 2) {
@@ -118,6 +135,7 @@ public class Game {
 				break initPlayers;
 			}
 			
+			// check if the entered player already exists
 			for(Player player : players.getPlayers()) {
 				if(player.name.equals(input)) {
 					System.out.printf("There is another player with the name %s. ", input);
@@ -140,6 +158,7 @@ public class Game {
 			System.out.println();
 		}
 		
+		// todo: add some way to remove players before the game starts
 		System.out.println("Playing with the following players: ");
 		players.getPlayers().forEach(n -> System.out.println("\t" + n.name));
 		System.out.println();
@@ -187,7 +206,7 @@ public class Game {
 			
 			System.out.println();
 			System.out.println("When you are alone and no one can see your screen, please type anything in.");
-			game.in.next();
+			game.input();
 			
 			System.out.println();
 			

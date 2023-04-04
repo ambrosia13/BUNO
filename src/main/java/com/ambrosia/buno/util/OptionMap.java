@@ -3,7 +3,6 @@ package com.ambrosia.buno.util;
 import com.ambrosia.buno.Game;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.function.IntConsumer;
 
 public class OptionMap {
@@ -28,11 +27,6 @@ public class OptionMap {
 		return this;
 	}
 	
-	public OptionMap errorMessage(String errorMessage) {
-		this.errorMessage = errorMessage;
-		return this;
-	}
-	
 	/**
 	 * Displays this OptionMap to the user. The index displayed to the user is shifted
 	 * up by 1, so it starts with 1 to be user-friendly.
@@ -53,9 +47,9 @@ public class OptionMap {
 	 * 
 	 * @return the index of the user's answer
 	 */
-	public int getAnswer(Scanner in) {
+	public int getAnswer(Game game) {
 		while(true) {
-			String input = in.next();
+			String input = game.input();
 			
 			try {
 				int inputAsInt = Integer.parseInt(input) - 1;
@@ -78,7 +72,7 @@ public class OptionMap {
 	}
 	
 	public int getAnswer() {
-		return getAnswer(Game.getInstance().in);
+		return getAnswer(Game.getInstance());
 	}
 	
 	/**

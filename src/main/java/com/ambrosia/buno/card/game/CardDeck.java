@@ -78,6 +78,12 @@ public class CardDeck {
 			addCard(card);
 		}
 	}
+	
+	/**
+	 * Takes a card, removing it from the deck in the process.
+	 * 
+	 * @return the card that was removed from the deck
+	 */
 	public Card takeCard() {
 		return cards.remove(Game.getInstance().random.nextInt(cards.size()));
 	}
